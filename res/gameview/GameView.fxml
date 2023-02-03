@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1000.0" stylesheets="@gameview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameplay.GameViewController">
+   <children>
+      <ImageView layoutX="816.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@roomcase.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="167.0" layoutX="825.0" layoutY="577.0" onMouseClicked="#switchToMenu" pickOnBounds="true" smooth="false" styleClass="imageview" />
+      <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="869.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../menu/blue_panel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/damage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/damage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../menu/bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/item_050.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/faceblue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="855.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@item/enemy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="877.0" layoutY="583.0" onMouseClicked="#switchToMenu" prefHeight="27.0" prefWidth="65.0" text="MENU">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="130.0" prefHeight="20.0" prefWidth="40.0" text="Level">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="220.0" prefHeight="20.0" prefWidth="32.0" text="Life">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="175.0" prefHeight="20.0" prefWidth="39.0" text="Score">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="310.0" prefHeight="20.0" prefWidth="75.0" text="Range">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="265.0" prefHeight="20.0" prefWidth="49.0" text="Bomb">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="355.0" prefHeight="20.0" prefWidth="49.0" text="Speed">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="400.0" prefHeight="20.0" prefWidth="32.0" text="Left">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="unmute" fitHeight="80.0" fitWidth="60.0" layoutX="880.0" layoutY="430.0" onMouseClicked="#PauseSound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../menu/unmute.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mute" fitHeight="80.0" fitWidth="60.0" layoutX="880.0" layoutY="430.0" onMouseClicked="#PlaySound" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../menu/mute.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueFace" fitHeight="72.0" fitWidth="65.0" layoutX="876.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

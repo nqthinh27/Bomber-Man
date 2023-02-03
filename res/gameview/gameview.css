@@ -1,0 +1,14 @@
+.imageview
+{
+    -fx-image: url('button_normal.png');
+}
+
+.imageview:hover
+{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
+
+.imageview:pressed
+{
+    -fx-image: url('button_selected.png');
+}

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="850.0" stylesheets="@button.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="850.0" pickOnBounds="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SinglePlayerButton" layoutX="30.0" layoutY="164.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="218.0" text="Single Player">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <Button fx:id="MultiplayerButton" layoutX="30.0" layoutY="252.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="218.0" text="Multiplayer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <Button fx:id="Button3" layoutX="30.0" layoutY="438.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="218.0" text="Control">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <Button fx:id="TutorialButton" layoutX="30.0" layoutY="344.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="218.0" text="Tutorial">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <Button fx:id="ExitButton" layoutX="30.0" layoutY="532.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="218.0" text="Quit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <AnchorPane fx:id="ControlPane" layoutX="1000.0" layoutY="165.0" prefHeight="430.0" prefWidth="530.0" scaleShape="false" styleClass="childPane">
+         <children>
+            <ImageView fitHeight="357.0" fitWidth="498.0" layoutX="21.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background_option.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="389.0" layoutY="247.0" prefHeight="17.0" prefWidth="27.0" style="-fx-background-color: dbdbdb;" text="Shift">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MultiPlayerPane" layoutX="1000.0" layoutY="165.0" prefHeight="430.0" prefWidth="530.0" scaleShape="false" styleClass="childPane">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="150.0" layoutX="191.0" layoutY="63.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="blue2" layoutX="90.0" layoutY="270.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Character2" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="red2" layoutX="230.0" layoutY="270.0" mnemonicParsing="false" toggleGroup="$Character2">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="green2" layoutX="360.0" layoutY="270.0" mnemonicParsing="false" toggleGroup="$Character2">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <ImageView fitHeight="46.0" fitWidth="367.0" layoutX="83.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="92.0" layoutY="19.0" prefHeight="33.0" prefWidth="347.0" text="Choose Your Character">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="324.0" endY="9.33331298828125" layoutX="165.0" layoutY="195.0" startX="-104.6666259765625" startY="9.33331298828125" />
+            <Button fx:id="PlayMultiPlayerGame" layoutX="287.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#PlayMultiPlayerGame" prefHeight="53.0" prefWidth="218.0" text="Play Game">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="blue1" layoutX="90.0" layoutY="120.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Character1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="red1" layoutX="230.0" layoutY="120.0" mnemonicParsing="false" toggleGroup="$Character1">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="green1" layoutX="360.0" layoutY="120.0" mnemonicParsing="false" toggleGroup="$Character1">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <ImageView fitHeight="39.0" fitWidth="150.0" layoutX="193.0" layoutY="214.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="NameField1" layoutX="196.0" layoutY="68.0" prefHeight="25.0" prefWidth="140.0" />
+            <TextField fx:id="NameField2" layoutX="198.0" layoutY="219.0" prefHeight="25.0" prefWidth="140.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GamePane" layoutX="1000.0" layoutY="165.0" prefHeight="430.0" prefWidth="530.0" scaleShape="false" styleClass="childPane">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="367.0" layoutX="83.0" layoutY="40.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="95.0" layoutY="43.0" prefHeight="33.0" prefWidth="347.0" text="Choose Your Character">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="PlayButton" layoutX="287.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#PlayGame" prefHeight="53.0" prefWidth="218.0" text="Play Game">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="blue" layoutX="90.0" layoutY="180.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Character" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="red" layoutX="230.0" layoutY="180.0" mnemonicParsing="false" toggleGroup="$Character">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="green" layoutX="354.0" layoutY="180.0" mnemonicParsing="false" toggleGroup="$Character">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@character/default2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <ImageView fitHeight="46.0" fitWidth="161.0" layoutX="190.0" layoutY="103.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="NameField" alignment="CENTER" layoutX="195.0" layoutY="108.0" prefHeight="17.0" prefWidth="151.0" promptText="Enter your name">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <AnchorPane fx:id="TutorialPane" layoutX="1000.0" layoutY="165.0" prefHeight="430.0" prefWidth="530.0" scaleShape="false" styleClass="childPane">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="233.0" layoutX="152.0" layoutY="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@blue_button13.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="155.0" layoutY="39.0" prefHeight="33.0" prefWidth="226.0" text="Tutorial">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="83.0" prefHeight="53.0" prefWidth="391.0" text="Nhiệm vụ của bạn là điều khiển nhân vật đặt bom để tiêu diệt các quái và tìm đường để qua màn tiếp theo." wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="137.0" prefHeight="53.0" prefWidth="293.0" text="Ẩn dưới các hộp có chứa các vật phẩm nâng cấp bạn sẽ cần chúng đấy :" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="194.0" prefHeight="53.0" prefWidth="209.0" text="đặt thêm 1 quả bom." wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../item/bubble.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="76.0" layoutY="257.0" prefHeight="53.0" prefWidth="293.0" text="Tăng 1 ô cho phạm vi nổ của bom" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../item/damage.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="76.0" layoutY="320.0" prefHeight="53.0" prefWidth="209.0" text="Tăng tốc độ di chuyển" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../item/item_050.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="170.0" fitWidth="548.0" layoutX="291.0" layoutY="-3.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@title.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="unmute" fitHeight="82.0" fitWidth="63.0" layoutX="100.0" layoutY="30.0" onMouseClicked="#PauseSound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unmute.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mute" fitHeight="82.0" fitWidth="63.0" layoutX="100.0" layoutY="30.0" onMouseClicked="#PlaySound" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@mute.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/DEV/JAVA/BIN/JavaFx_Bomberman/src</OriginalElement>
+  <nodes>
+    <node x="30.0" y="81.0">gameplay.MapCreate</node>
+    <node x="1077.0" y="162.0">entities.bomb.Bomb</node>
+    <node x="905.0" y="162.0">entities.bomb.BombExplosion</node>
+    <node x="0.0" y="281.0">entities.bomb.ExplosionDirection</node>
+    <node x="322.3229166666667" y="324.0">entities.enemies.Doll</node>
+    <node x="867.1614583333333" y="476.0">gamelogic.KeyController</node>
+    <node x="229.99999999999997" y="281.0">entities.enemies.MovingEnemy.Node</node>
+    <node x="781.3229166666667" y="324.0">entities.enemies.Minvo</node>
+    <node x="284.0" y="162.0">entities.powerup.PowerupFlames</node>
+    <node x="1105.5" y="0.0">graphics.Sprite</node>
+    <node x="882.6614583333333" y="400.0">gamelogic.KeyInput</node>
+    <node x="240.00000000000003" y="210.49152542372877">entities.enemies.MovingEnemy.IQ</node>
+    <node x="1188.0" y="162.0">entities.block.Brick</node>
+    <node x="174.0" y="439.25">gameplay.GameViewController</node>
+    <node x="622.75" y="476.0">gamelogic.MultiPlayerGameLoop</node>
+    <node x="757.0771539548024" y="81.0">entities.block.Grass</node>
+    <node x="929.6614583333334" y="324.0">entities.player.Player</node>
+    <node x="236.82291666666669" y="81.0">entities.powerup.Powerup</node>
+    <node x="629.0" y="162.0">entities.MovingEntity</node>
+    <node x="458.0" y="162.0">entities.powerup.PowerupSpeed</node>
+    <node x="786.0" y="162.0">entities.bomb.Bomb2</node>
+    <node x="907.8229166666667" y="81.0">entities.AnimatedEntity</node>
+    <node x="658.75" y="400.0">gamelogic.GameLoop</node>
+    <node x="540.3229166666667" y="324.0">entities.enemies.Oneal</node>
+    <node x="420.3229166666667" y="324.0">entities.enemies.Balloon</node>
+    <node x="551.8229166666666" y="81.0">entities.block.Wall</node>
+    <node x="0.0" y="378.5">gamelogic.SoundEffect</node>
+    <node x="416.5" y="400.0">menu.MenuController</node>
+    <node x="745.0" y="0.0">entities.RectangleBox</node>
+    <node x="615.3229166666667" y="0.0">entities.Entity</node>
+    <node x="348.9745762711865" y="243.0">entities.enemies.MovingEnemy</node>
+    <node x="650.3229166666666" y="324.0">entities.enemies.Kondoria</node>
+    <node x="0.0" y="218.06779661016947">gamelogic.Director</node>
+    <node x="174.0" y="162.0">entities.powerup.Portal</node>
+    <node x="400.3229166666667" y="478.5">gameplay.MultiPlayerController</node>
+    <node x="1077.0" y="324.0">entities.player.Player2</node>
+    <node x="537.3229166666667" y="243.0">entities.enemies.Enemy</node>
+    <node x="1087.0" y="50.0">graphics.SpriteSheet</node>
+    <node x="14.0" y="476.0">gamelogic.SoundEffect.Volume</node>
+    <node x="42.915695621468785" y="26.288135593220318">Main</node>
+    <node x="0.0" y="162.0">entities.powerup.PowerupBombs</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="entities.block.Wall" target="entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="591.8229166666666" y="56.0" />
+      <point x="659.3229166666667" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Kondoria" target="entities.enemies.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="705.8229166666666" y="299.0" />
+      <point x="585.3229166666667" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.MovingEntity" target="entities.AnimatedEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="697.5" y="137.0" />
+      <point x="982.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.powerup.PowerupSpeed" target="entities.powerup.Powerup" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="533.5" y="137.0" />
+      <point x="291.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.player.Player" target="entities.MovingEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="975.6614583333334" y="218.0" />
+      <point x="697.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Doll" target="entities.enemies.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="361.3229166666667" y="299.0" />
+      <point x="585.3229166666667" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Balloon" target="entities.enemies.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="470.3229166666667" y="299.0" />
+      <point x="585.3229166666667" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.powerup.PowerupBombs" target="entities.powerup.Powerup" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="77.0" y="137.0" />
+      <point x="291.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.bomb.Bomb2" target="entities.AnimatedEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="835.5" y="137.0" />
+      <point x="982.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.block.Grass" target="entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="800.5771539548024" y="56.0" />
+      <point x="659.3229166666667" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.block.Brick" target="entities.AnimatedEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1230.0" y="137.0" />
+      <point x="982.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.MovingEnemy.Node" target="entities.enemies.MovingEnemy" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="274.0" y="258.5" />
+      <point x="421.4745762711865" y="258.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.MovingEnemy.IQ" target="entities.enemies.MovingEnemy" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="274.0" y="258.5" />
+      <point x="421.4745762711865" y="258.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.bomb.Bomb" target="entities.AnimatedEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1122.5" y="137.0" />
+      <point x="982.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.powerup.Portal" target="entities.powerup.Powerup" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="219.0" y="137.0" />
+      <point x="291.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Minvo" target="entities.enemies.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="827.8229166666667" y="299.0" />
+      <point x="585.3229166666667" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Enemy" target="entities.MovingEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="585.3229166666667" y="218.0" />
+      <point x="697.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="gamelogic.SoundEffect.Volume" target="gamelogic.SoundEffect" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.enemies.Oneal" target="entities.enemies.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.powerup.PowerupFlames" target="entities.powerup.Powerup" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="361.0" y="137.0" />
+      <point x="291.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.bomb.BombExplosion" target="entities.AnimatedEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="981.0" y="137.0" />
+      <point x="982.8229166666667" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.player.Player2" target="entities.MovingEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1127.0" y="218.0" />
+      <point x="697.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.AnimatedEntity" target="entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="982.8229166666667" y="56.0" />
+      <point x="659.3229166666667" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="entities.powerup.Powerup" target="entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="291.8229166666667" y="56.0" />
+      <point x="659.3229166666667" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7763157894736842" showDependencies="false" x="636.0" y="332.0" />
+  <SelectedNodes>
+    <node>gameplay.MapCreate</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
